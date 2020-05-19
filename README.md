@@ -23,7 +23,7 @@ Additionally the app has a CallDirectoryExtension on iOS that supplies the Calle
 * Update Bundle Identifiers
 * Search for com.example and replace with your bundle identifiers and group name (in CallDirectoryHandler.cs and CallDirectoryStore.cs)
 
-This project is based on the [Employee Directory Example][employeedirectoryRef] by Microsoft.
+This project is based on the Employee Directory Example [https://docs.microsoft.com/en-us/samples/xamarin/xamarin-forms-samples/employeedirectory/] by Microsoft.
 
 ## Noteable changes:
 * Data Source is XLSX instead of CVS
@@ -39,5 +39,3 @@ This project is based on the [Employee Directory Example][employeedirectoryRef] 
 * Favourites are not updated when the app is updated with new data
 * Tested on iOS only
 * No Caller ID functionality for Android implemented
-
-[employeedirectoryRef]: https://docs.microsoft.com/en-us/samples/xamarin/xamarin-forms-samples/employeedirectory/)
