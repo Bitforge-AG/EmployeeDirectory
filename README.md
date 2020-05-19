@@ -18,7 +18,7 @@ Additionally the app has a CallDirectoryExtension on iOS that supplies the Calle
 * Replace or Update the Data Sources (Departments.xlsx, People.xlsx) in EmployeeDirectory.iOS/Resources and EmployeeDirectory.Android/Resources/raw
 * Update the Data field names to match the Excel headers in Person.cs
 * Update PersonViewModel with the new fields
-# Call Directory Extension
+### Call Directory Extension
 * Create App ID's with an App Group in Apple Developer portal
 * Update Bundle Identifiers
 * Search for com.example and replace with your bundle identifiers and group name (in CallDirectoryHandler.cs and CallDirectoryStore.cs)
