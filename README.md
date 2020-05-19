@@ -14,18 +14,18 @@ It is a fully offline phonebook application and requires no backend integration.
 
 Additionally the app has a CallDirectoryExtension on iOS that supplies the Caller ID (Name, Department...) to identify incoming calls. Using Appcenter and giving your customer access to the git repository, you can implement a build pipeline where your customer can replace the data without your involvement.
 
-##Getting started
+## Getting started
 * Replace or Update the Data Sources (Departments.xlsx, People.xlsx) in EmployeeDirectory.iOS/Resources and EmployeeDirectory.Android/Resources/raw
 * Update the Data field names to match the Excel headers in Person.cs
 * Update PersonViewModel with the new fields
-#Call Directory Extension
+# Call Directory Extension
 * Create App ID's with an App Group in Apple Developer portal
 * Update Bundle Identifiers
 * Search for com.example and replace with your bundle identifiers and group name (in CallDirectoryHandler.cs and CallDirectoryStore.cs)
 
 This project is based on the [Employee Directory Example][employeedirectoryRef] by Microsoft.
 
-##Noteable changes:
+## Noteable changes:
 * Data Source is XLSX instead of CVS
 * Support for multiple data sources (Departments, People)
 * Quick Selection of Search Filters (Main Menu)
@@ -35,7 +35,7 @@ This project is based on the [Employee Directory Example][employeedirectoryRef] 
 * Help Section (for Call Directory Extension)
 * Blank Splash Screen (prevents discussions about Design)
 
-##Known issues
+## Known issues
 * Favourites are not updated when the app is updated with new data
 * Tested on iOS only
 * No Caller ID functionality for Android implemented
