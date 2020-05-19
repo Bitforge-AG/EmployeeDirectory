@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="EmployeeDirectoryUI.ViewsXaml.MainMenu">
+    
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="Bitforge.png"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="Start" Margin="5" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid BackgroundColor="#23559D" Padding="15,15,10,15" Grid.Row="0">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OnPersonenClicked}"/>
+                </Grid.GestureRecognizers>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Personen" TextColor="White" VerticalOptions="Center"/>
+                <Image Source="right-chevron.png" Grid.Column="1" HeightRequest="12" WidthRequest="12"/>
+            </Grid>
+            <Grid BackgroundColor="#4FADE0" Padding="15,15,15,15" Grid.Row="1">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OnDienstnummerClicked}"/>
+                </Grid.GestureRecognizers>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Dienstnummer" TextColor="White" VerticalOptions="Center"/>
+                <Image Source="right-chevron.png" Grid.Column="1" HeightRequest="12" WidthRequest="12"/>
+            </Grid>
+            <Grid BackgroundColor="#23559D" Padding="15,15,15,15" Grid.Row="2">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OnStationszimmerClicked}"/>
+                </Grid.GestureRecognizers>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Stationszimmer" TextColor="White" VerticalOptions="Center"/>
+                <Image Source="right-chevron.png" Grid.Column="1" HeightRequest="12" WidthRequest="12"/>
+            </Grid>
+            <Grid BackgroundColor="#4FADE0" Padding="15,15,15,15" Grid.Row="3">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OnDispoClicked}"/>
+                </Grid.GestureRecognizers>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Stationäre Disposition" TextColor="White" VerticalOptions="Center"/>
+                <Image Source="right-chevron.png" Grid.Column="1" HeightRequest="12" WidthRequest="12"/>
+            </Grid>
+            <Grid BackgroundColor="#23559D" Padding="15,15,15,15" Grid.Row="4">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OnWichtigClicked}"/>
+                </Grid.GestureRecognizers>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Wichtige Nummern" TextColor="White" VerticalOptions="Center"/>
+                <Image Source="right-chevron.png" Grid.Column="1" HeightRequest="12" WidthRequest="12"/>
+            </Grid>
+            <Grid BackgroundColor="#4FADE0" Padding="15,15,15,15" Grid.Row="5">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OnAlleClicked}"/>
+                </Grid.GestureRecognizers>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Alle" TextColor="White" VerticalOptions="Center"/>
+                <Image Source="right-chevron.png" Grid.Column="1" HeightRequest="12" WidthRequest="12"/>
+            </Grid>
+            <Grid BackgroundColor="#23559D" Padding="15,15,15,15" Grid.Row="6">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding OnFavoritenClicked}"/>
+                </Grid.GestureRecognizers>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Favoriten" TextColor="White" VerticalOptions="Center"/>
+                <Image Source="right-chevron.png" Grid.Column="1" HeightRequest="12" WidthRequest="12"/>
+            </Grid>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

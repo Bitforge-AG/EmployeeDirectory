@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="EmployeeDirectoryUI.ViewsXaml.AboutPage">
+    <ContentPage.Content>
+        <StackLayout Margin="15,10,15,10" Spacing="15">
+            <Label Text="Version 1.0.0" FontSize="Medium" TextColor="Gray"/>
+            <Label Text="Herausgeber" FontAttributes="Bold" FontSize="Subtitle"/>
+            <Image Source="Bitforge.png" HeightRequest="40" Aspect="AspectFit" HorizontalOptions="StartAndExpand" />
+            
+            <Label FontSize="Medium">
+            <Label.Text>
+Bitforge AG
+Zeughausstrasse 39
+8004 Zürich
+
+This app is provided as-is without warranties. Help your community by adapting it to your specific needs.
+            </Label.Text>
+            </Label>
+            <Label FontSize="Micro" TextColor="LightGray">
+            <Label.Text>
+Star and Chevron icons (c) Smashicons - smashicons.com
+            </Label.Text>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
